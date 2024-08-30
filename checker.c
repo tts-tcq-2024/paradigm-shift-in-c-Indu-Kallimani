@@ -2,7 +2,7 @@
 #include <assert.h>
 
 int check_temperature(float temperature){
-if(temperature < 0 ) || temperature > 45 ){
+if(temperature < 0 ) || (temperature > 45 ){
   printf("Temperature is out of range!\n");
   return 0;
   }
@@ -10,7 +10,7 @@ return 1;
 }
 
 int check_soc(float soc){
-if(soc < 20 ) || soc > 80 ){
+if(soc < 20 ) || (soc > 80 ){
   printf("State of charge is out of range!\n");
   return 0;
   }
