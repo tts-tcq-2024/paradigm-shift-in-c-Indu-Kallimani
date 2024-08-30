@@ -26,7 +26,7 @@ return 1;
 }
 
 int batteryIsOk(float temperature,float soc,float chargeRate){
-return check_temperature(temperature) && check_soc(soc) && check_chargeRate(chargeRate);
+return check_temperature(temperature)&&check_soc(soc)&&check_chargeRate(chargeRate);
   }
 
 int main() {
