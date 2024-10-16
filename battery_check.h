@@ -12,12 +12,12 @@
 // Flags for enabling/disabling warnings for specific parameters
 extern int enable_temp_warning;
 extern int enable_soc_warning;
-extern int enable_charge_rate_warning
+extern int enable_charge_rate_warning;
 
 // Function prototypes
 int check_temperature(float temperature);
 int check_soc(float soc);
 int check_chargeRate(float chargeRate);
-
+int batteryIsOk(float temperature, float soc, float chargeRate);
 
 #endif
