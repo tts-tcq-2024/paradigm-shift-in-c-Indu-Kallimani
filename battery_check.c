@@ -38,11 +38,5 @@ int check_soc(float soc) {
     return 1;
 }
 
-int check_chargeRate(float chargeRate) {
-    if (!is_within_range(chargeRate, 0, CHARGE_RATE_UPPER_LIMIT, "Charge Rate")) {
-        return 0;
-    }
-    check_warning(chargeRate, CHARGE_RATE_UPPER_LIMIT, CHARGE_RATE_WARNING_TOLERANCE, enable_charge_rate_warning, "Approaching charge rate peak!");
-    return 1;
-}
+
 
